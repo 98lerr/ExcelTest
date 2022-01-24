@@ -1,0 +1,2 @@
+xlcalculator~=0.4.1
+pytest
