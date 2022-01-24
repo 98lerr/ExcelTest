@@ -13,6 +13,7 @@ Excel 手順書をやめられない人向けの、Excel手順書テストサン
 
 ```bash: ExcelTest直下にて
 pip install -r requirements.txt
+export PYTHONPATH=./src
 python -m pytest
 ```
 
