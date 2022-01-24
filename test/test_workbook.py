@@ -40,10 +40,10 @@ class TestExcelEvaluator:
         expected = "書籍 - 新しい本"
         assert actual == expected
 
-    def test_セルの数式が参照する値を更新することで計算結果が変わる_vlookup編(self, two_hundreds):
+    def test_セルの数式が参照する値を更新することで計算結果が変わる_vlookup編(self, two_hundred):
         workbook = Workbook.get_workbook(workbook="./test/samplebook.xlsx")
         workbook.set_cell_value(worksheet_name="Sheet1", cell_address="C1", cell_value=200)
 
         actual = workbook.get_cell_value(worksheet_name="Sheet1", cell_address="C7")
-        expected = two_hundreds
+        expected = two_hundred
         assert actual == expected
